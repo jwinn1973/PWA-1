@@ -8,9 +8,13 @@ window.Person = Person;
 
 
 var Person = function(name, action, job, row){
+    Person.name = ['Jason', 'Jack', 'Cynthia', 'William', 'Sue'];
     Person.jobs = ['RingMaster', 'Juggler', 'Clown', 'Usher'];
     Person.actions = ['Practicing', 'Juggling', 'Smiling', 'Talking'];
-    
-    //this.job = Math.floor(Math.random()*Person.length);
-    //console.log(this.job)
+
+    this.name = name;
+    this.actions = action;
+    this.job = job;
+    this.row = row;
+
 };
